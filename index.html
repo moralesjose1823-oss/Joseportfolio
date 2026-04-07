@@ -88,11 +88,11 @@ section{padding:120px 60px;position:relative;z-index:1}
 
 /* EXPERIENCE */
 .experience{background:var(--bg)}
-.tb{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;max-width:920px;margin-bottom:40px;border-bottom:none}.tb-label{font-family:'Barlow Condensed',sans-serif;font-size:.82rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--uy);margin-bottom:16px;animation:pulse 2s ease infinite}
-.tbtn{font-family:'Barlow Condensed',sans-serif;font-size:1.2rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;padding:22px 38px;background:var(--bgc);border:2px solid var(--bd);color:var(--m);position:relative;white-space:nowrap;transition:all .4s;flex:1;text-align:center;min-width:160px}
+.tb{display:flex;flex-wrap:wrap;gap:10px;max-width:1100px;margin:0 auto 40px auto;justify-content:center;border-bottom:none}.tb-label{font-family:'Barlow Condensed',sans-serif;font-size:.82rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--uy);margin-bottom:16px;animation:pulse 2s ease infinite;text-align:center}
+.tbtn{font-family:'Barlow Condensed',sans-serif;font-size:1rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:18px 28px;background:var(--bgc);border:2px solid var(--bd);color:var(--m);position:relative;white-space:nowrap;transition:all .4s;text-align:center;cursor:pointer}
 .tbtn::after{display:none}
 .tbtn:hover{color:var(--uy);background:rgba(21,71,51,.25);border-color:var(--ug);transform:translateY(-3px)}.tbtn.on{color:var(--bg);background:var(--uy);border-color:var(--uy);font-weight:700;box-shadow:0 6px 25px rgba(254,225,35,.2)}.tbtn.on::after{transform:scaleX(1)}
-.pnl{display:none;max-width:920px;animation:fi .5s ease}.pnl.on{display:block}
+.pnl{display:none;max-width:920px;margin:0 auto;animation:fi .5s ease}.pnl.on{display:block}
 .pr{font-family:'Bebas Neue',sans-serif;font-size:2rem;letter-spacing:1px;margin-bottom:6px}
 .po{font-family:'Barlow Condensed',sans-serif;font-size:1.1rem;letter-spacing:1px;margin-bottom:6px}
 .po a{color:var(--uy);text-decoration:none;border-bottom:1px dashed var(--uy);transition:all .3s;font-weight:600}
@@ -267,50 +267,50 @@ footer{padding:18px;flex-direction:column;gap:10px;text-align:center}
 
 <!-- EXPERIENCE -->
 <section class="experience" id="experience">
-<div class="rv"><p class="sl2">My Journey</p><h2 class="stl">EXPERIENCE &amp; EDUCATION</h2></div>
-<div class="rv d1"><p class="tb-label">▼ CLICK A ROLE BELOW TO EXPLORE MY EXPERIENCE</p></div>
+<div class="rv" style="text-align:center"><p class="sl2" style="justify-content:center">My Journey</p><h2 class="stl">EXPERIENCE &amp; EDUCATION</h2></div>
+<div class="rv d1" style="text-align:center"><p class="tb-label">▼ CLICK A ROLE BELOW TO EXPLORE MY EXPERIENCE</p></div>
 <div class="tb rv d1" id="tabs">
-<button class="tbtn on" data-t="0">⚾ Emeralds</button>
-<button class="tbtn" data-t="1">🚀 Accelerator</button>
-<button class="tbtn" data-t="2">👟 The NEST</button>
-<button class="tbtn" data-t="3">⭐ Atticus Hotel</button>
-<button class="tbtn" data-t="4">🤖 Agentic Engineer</button>
+<button class="tbtn on" data-t="0">🚀 Accelerator</button>
+<button class="tbtn" data-t="1">⚾ Emeralds</button>
+<button class="tbtn" data-t="2">🤖 Agentic Engineer</button>
+<button class="tbtn" data-t="3">👟 The NEST</button>
+<button class="tbtn" data-t="4">⭐ Atticus Hotel</button>
 <button class="tbtn" data-t="5">💻 Web Developer</button>
 </div>
 <div class="pnl on rv d2" id="p0">
-<div class="pr" style="text-align:center">Eugene Emeralds &mdash; Box Office &amp; Ticket Sales</div>
-<div class="po" style="text-align:center"><a href="https://www.milb.com/eugene" target="_blank">Eugene Emeralds Baseball</a> &middot; Eugene, OR</div>
-<span class="pb sf">&#9918; High-A Affiliate &mdash; MLB San Francisco Giants</span>
-<div class="pd">2026 &mdash; Present</div>
-<ul class="pl"><li>Manage box office operations for a professional MiLB organization directly affiliated with the San Francisco Giants, handling ticket sales and customer transactions on game days</li><li>Drive ticket sales by building relationships with fans, groups, and walk-up customers, delivering a high level of service that supports attendance and revenue goals</li><li>Gain hands-on experience in professional sports business operations, learning the behind-the-scenes commercial side of a live entertainment and athletics organization</li><li>Collaborate with the broader game day staff to ensure a seamless fan experience from box office to gate at PK Park</li></ul>
-</div>
-<div class="pnl" id="p1">
 <div class="pr" style="text-align:center">Research &amp; Insights Member</div>
 <div class="po" style="text-align:center"><a href="https://www.oregonaccelerator.com/" target="_blank">Oregon Accelerator</a> &middot; University of Oregon</div>
 <span class="pb nil">Student-Led NIL Marketing Collective</span>
 <div class="pd">2026 &mdash; Present</div>
 <ul class="pl"><li>Conduct in-depth analytical research on the NIL landscape, emerging trends, and brand partnership opportunities for UO student-athletes</li><li>Perform comprehensive social audits on student-athletes — analyzing follower demographics, engagement rates, content performance, and audience reach — to determine their fair market value for brand deals</li><li>Analyze data and develop insights to support creative strategy, campaign planning, and brand deal execution</li><li>Collaborate with account managers, creatives, and production teams to deliver full-service athlete branding campaigns</li><li>Work with brands like Dutch Bros, Celsius, and local Eugene businesses to create athlete partnership deals informed by data-driven valuation</li></ul>
 </div>
+<div class="pnl" id="p1">
+<div class="pr" style="text-align:center">Eugene Emeralds &mdash; Box Office &amp; Ticket Sales</div>
+<div class="po" style="text-align:center"><a href="https://www.milb.com/eugene" target="_blank">Eugene Emeralds Baseball</a> &middot; Eugene, OR</div>
+<span class="pb sf">&#9918; High-A Affiliate &mdash; MLB San Francisco Giants</span>
+<div class="pd">2026 &mdash; Present</div>
+<ul class="pl"><li>Manage box office operations for a professional MiLB organization directly affiliated with the San Francisco Giants, handling ticket sales and customer transactions on game days</li><li>Drive ticket sales by building relationships with fans, groups, and walk-up customers, delivering a high level of service that supports attendance and revenue goals</li><li>Gain hands-on experience in professional sports business operations, learning the behind-the-scenes commercial side of a live entertainment and athletics organization</li><li>Collaborate with the broader game day staff to ensure a seamless fan experience from box office to gate at PK Park</li></ul>
+</div>
 <div class="pnl" id="p2">
+<div class="pr" style="text-align:center">Agentic AI Engineer</div>
+<div class="po" style="text-align:center">Independent &middot; Self-Directed</div>
+<span class="pb" style="background:linear-gradient(135deg,#1a1a2e,#16213e);color:#7c83fd;display:block;text-align:center">🤖 AI Automation &amp; Agentic Systems</span>
+<div class="pd" style="text-align:center">2026 &mdash; Present</div>
+<ul class="pl"><li>Design and deploy autonomous AI agent workflows that integrate large language models with real-world tools, APIs, and data sources to automate complex multi-step tasks</li><li>Build agentic pipelines using platforms like Claude AI, enabling AI systems to independently browse the web, write and execute code, manage files, and make decisions with minimal human input</li><li>Apply agentic engineering to sports business use cases — including automated market research, brand intelligence gathering, and AI-assisted NIL campaign analysis</li><li>Stay at the forefront of the AI agent ecosystem by continuously learning and implementing emerging frameworks and automation strategies</li></ul>
+</div>
+<div class="pnl" id="p3">
 <div class="pr" style="text-align:center">Brands Operations Associate &amp; Retail Sales</div>
 <div class="po" style="text-align:center"><a href="https://www.eugenenest.com/" target="_blank">The Eugene NEST</a> &middot; Eugene, OR</div>
 <span class="pb vnt">Curated Vintage &amp; Sneaker Retail</span>
 <div class="pd">2024 &mdash; Present</div>
 <ul class="pl"><li>Analyze sales patterns and customer interactions to refine product placement strategies, driving improvements in conversion and floor efficiency</li><li>Influence product and design decisions by sharing customer feedback, trend insights, and sales observations with management</li><li>Execute in-store marketing initiatives and merchandise displays to enhance brand presentation and customer experience</li><li>Support day-to-day operations including inventory intake, merchandising, restocking, and floor organization</li></ul>
 </div>
-<div class="pnl" id="p3">
+<div class="pnl" id="p4">
 <div class="pr" style="text-align:center">Housekeeper</div>
 <div class="po" style="text-align:center"><a href="https://www.atticushotel.com/" target="_blank">Atticus Hotel</a> &middot; McMinnville, OR</div>
 <span class="pb lux">Luxury Boutique Hotel</span>
 <div class="pd">Mar 2021 &mdash; Sep 2023</div>
 <ul class="pl"><li>Maintained five-star cleanliness and presentation standards across guest rooms and common areas in a luxury boutique hotel</li><li>Performed quality control checks to uphold brand standards and the hotel's reputation for excellence and attention to detail</li><li>Responded promptly to guest requests and service needs, supporting high satisfaction and positive guest experiences</li></ul>
-</div>
-<div class="pnl" id="p4">
-<div class="pr" style="text-align:center">Agentic AI Engineer</div>
-<div class="po" style="text-align:center">Independent &middot; Self-Directed</div>
-<span class="pb" style="background:linear-gradient(135deg,#1a1a2e,#16213e);color:#7c83fd;display:block;text-align:center">🤖 AI Automation &amp; Agentic Systems</span>
-<div class="pd" style="text-align:center">2026 &mdash; Present</div>
-<ul class="pl"><li>Design and deploy autonomous AI agent workflows that integrate large language models with real-world tools, APIs, and data sources to automate complex multi-step tasks</li><li>Build agentic pipelines using platforms like Claude AI, enabling AI systems to independently browse the web, write and execute code, manage files, and make decisions with minimal human input</li><li>Apply agentic engineering to sports business use cases — including automated market research, brand intelligence gathering, and AI-assisted NIL campaign analysis</li><li>Stay at the forefront of the AI agent ecosystem by continuously learning and implementing emerging frameworks and automation strategies</li></ul>
 </div>
 <div class="pnl" id="p5">
 <div class="pr" style="text-align:center">Web Developer &amp; Portfolio Engineer</div>
@@ -353,7 +353,7 @@ footer{padding:18px;flex-direction:column;gap:10px;text-align:center}
 <!-- Header -->
 <div style="text-align:center;border-bottom:2px solid #154733;padding-bottom:20px;margin-bottom:24px">
 <h2 style="font-family:'Bebas Neue',sans-serif;font-size:2.8rem;letter-spacing:3px;color:#154733;margin-bottom:4px">JOSE MORALES</h2>
-<p style="font-family:'Barlow Condensed',sans-serif;font-size:.82rem;letter-spacing:2px;color:#555">Eugene, OR &middot; <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="9ef3f1ecfff2fbedb0f4f1edfbafa6acaddef9f3fff7f2b0fdf1f3">[email&#160;protected]</a> &middot; (503) 583-1340 &middot; linkedin.com/in/jose2morales</p>
+<p style="font-family:'Barlow Condensed',sans-serif;font-size:.82rem;letter-spacing:2px;color:#555">Eugene, OR &middot; <a href="mailto:morales.jose1823@gmail.com">morales.jose1823@gmail.com</a> &middot; (503) 583-1340 &middot; linkedin.com/in/jose2morales</p>
 </div>
 
 <!-- Summary -->
@@ -534,13 +534,13 @@ Social Media Analytics &middot; AI Tools &middot; Agentic Engineering &middot; W
 <div class="ct2 rv d1">
 <p>I'm always open to connecting with professionals in sports business, marketing, AI, and finance. Whether it's an internship, a collaboration, or a conversation about the latest sneaker drop &mdash; I'd love to hear from you.</p>
 <div class="cls">
-<a href="/cdn-cgi/l/email-protection#325f5d40535e57411c585d4157030a000172555f535b5e1c515d5f" class="clk"><div class="cic">&#9993;</div><div><strong>Email</strong><br><span style="font-size:.85rem"><span class="__cf_email__" data-cfemail="89e4e6fbe8e5ecfaa7e3e6faecb8b1bbbac9eee4e8e0e5a7eae6e4">[email&#160;protected]</span></span></div></a>
+<a href="mailto:morales.jose1823@gmail.com" class="clk"><div class="cic">&#9993;</div><div><strong>Email</strong><br><span style="font-size:.85rem">morales.jose1823@gmail.com</span></div></a>
 <a href="tel:+15035831340" class="clk"><div class="cic">&#9742;</div><div><strong>Phone</strong><br><span style="font-size:.85rem">(503) 583-1340</span></div></a>
 <a href="https://linkedin.com/in/jose2morales" target="_blank" class="clk"><div class="cic">in</div><div><strong>LinkedIn</strong><br><span style="font-size:.85rem">linkedin.com/in/jose2morales</span></div></a>
 </div>
 </div>
 <div class="rv d2">
-<div class="ctab"><h3>LET'S WORK TOGETHER</h3><p>Sports marketing, AI analytics, brand strategy, sneaker culture &mdash; let's connect.</p><a href="/cdn-cgi/l/email-protection#d2bfbda0b3beb7a1fcb8bda1b7e3eae0e192b5bfb3bbbefcb1bdbf" class="btn by magnetic">Send Me an Email &rarr;</a></div>
+<div class="ctab"><h3>LET'S WORK TOGETHER</h3><p>Sports marketing, AI analytics, brand strategy, sneaker culture &mdash; let's connect.</p><a href="mailto:morales.jose1823@gmail.com" class="btn by magnetic">Send Me an Email &rarr;</a></div>
 </div>
 </div>
 </section>
@@ -550,7 +550,7 @@ Social Media Analytics &middot; AI Tools &middot; Agentic Engineering &middot; W
 <p><a href="#hero">Back to Top &uarr;</a></p>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 // MAGNETIC BUTTONS
 document.querySelectorAll('.magnetic').forEach(btn=>{
 btn.addEventListener('mousemove',e=>{
